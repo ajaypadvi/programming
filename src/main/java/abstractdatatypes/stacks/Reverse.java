@@ -2,6 +2,9 @@ package abstractdatatypes.stacks;
 // reverse.java
 // stack used to reverse a string
 // to run this program: C>java ReverseApp
+/**
+ * This sample program shoows one of the application of stacks
+ */
 
 import java.io.*;                 // for I/O
 

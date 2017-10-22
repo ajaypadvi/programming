@@ -2,6 +2,9 @@ package abstractdatatypes.stacks;
 // brackets.java
 // stacks used to check matching brackets
 // to run this program: C>java bracketsApp
+/**
+ * This sample program shoows one of the application of stacks
+ */
 
 import java.io.*;                 // for I/O
 
