@@ -23,9 +23,8 @@ class AnagramApp {
         doAnagram(size);                       // anagram it
     }  // end main()
 
-    //-----------------------------------------------------------
+    //-----------------------------------------------------------abcd
     public static void doAnagram(int newSize) {
-        int limit;
         if (newSize == 1)                     // if too small,
             return;                           // go no further
 
