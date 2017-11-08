@@ -9,7 +9,7 @@ import static org.junit.Assert.assertArrayEquals;
 public class SolutionTest {
 
     /**
-     * Test method for @{@link interviewbit.chapter01.arrays.arraybug.Solution}
+     * Test method for @{@link Solution}
      */
     Solution solution;
 
