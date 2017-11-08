@@ -1,4 +1,4 @@
-package interviewbit.chapter01.arrays.minsteps;
+package interviewbit.chapter01.arrays.arraymath.minsteps;
 
 /**
  * Min Steps in Infinite GridBookmark Suggest Edit

@@ -1,7 +1,6 @@
-package interviewbit.chapter01.arrays.arraybug;
+package interviewbit.chapter01.arrays.arraymath.arraybug;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * The following code is supposed to rotate the array A by B positions.

@@ -1,4 +1,4 @@
-package interviewbit.chapter01.arrays.arraybug;
+package interviewbit.chapter01.arrays.arraymath.arraybug;
 
 import org.junit.After;
 import org.junit.Before;

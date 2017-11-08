@@ -1,4 +1,4 @@
-package interviewbit.chapter01.arrays.spiralmatrix;
+package interviewbit.chapter01.arrays.simulation.spiralmatrix;
 
 import org.junit.After;
 import org.junit.Before;
