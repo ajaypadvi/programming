@@ -1,4 +1,4 @@
-package interviewbit.chapter01.arrays.simulation.spiralmatrix;
+package interviewbit.level2.arrays.simulation.spiralmatrix;
 
 /**
  * Given a matrix of m * n elements (m rows, n columns), return all elements of the matrix in spiral order.

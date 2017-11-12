@@ -1,4 +1,4 @@
-package interviewbit.chapter01.arrays.arraymath.maxsum;
+package interviewbit.level2.arrays.arraymath.maxsum;
 
 
 import org.junit.After;

@@ -1,4 +1,4 @@
-package interviewbit.chapter01.arrays.arraymath.minsteps;
+package interviewbit.level2.arrays.arraymath.minsteps;
 
 import org.junit.After;
 import org.junit.Before;

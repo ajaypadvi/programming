@@ -1,4 +1,4 @@
-package interviewbit.chapter01.arrays.arraymath.maxsum;
+package interviewbit.level2.arrays.arraymath.maxsum;
 
 /**
  * Find the contiguous subarray within an array (containing at least one number) which has the largest sum.

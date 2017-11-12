@@ -1,4 +1,4 @@
-package interviewbit.chapter01.arrays.simulation.spiralmatrix2;
+package interviewbit.level2.arrays.simulation.spiralmatrix2;
 
 /**
  * Given an integer n, generate a square matrix filled with elements from 1 to n2 in spiral order.

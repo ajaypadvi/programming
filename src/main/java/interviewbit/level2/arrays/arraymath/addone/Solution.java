@@ -1,4 +1,4 @@
-package interviewbit.chapter01.arrays.arraymath.addone;
+package interviewbit.level2.arrays.arraymath.addone;
 
 import java.util.ArrayList;
 import java.util.Collections;

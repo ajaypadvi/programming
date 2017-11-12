@@ -1,4 +1,4 @@
-package interviewbit.chapter01.arrays.arraymath.arraybug;
+package interviewbit.level2.arrays.arraymath.arraybug;
 
 import java.util.ArrayList;
 
