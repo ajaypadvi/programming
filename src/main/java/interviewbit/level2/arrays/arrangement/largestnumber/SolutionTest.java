@@ -1,4 +1,4 @@
-package interviewbit.level2.arrays.arrangement;
+package interviewbit.level2.arrays.arrangement.largestnumber;
 
 import org.junit.After;
 import org.junit.Before;
