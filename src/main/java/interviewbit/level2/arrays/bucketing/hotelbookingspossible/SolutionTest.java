@@ -35,6 +35,6 @@ public class SolutionTest {
         ArrayList<Integer> list1 = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
         ArrayList<Integer> list2 = new ArrayList<>(Arrays.asList(10, 2, 6, 14));
         boolean rooms_available = solution.hotel(list1, list2, 4);
-        assertEquals(rooms_available, false);
+        assertEquals(rooms_available, true);
     }
 }
