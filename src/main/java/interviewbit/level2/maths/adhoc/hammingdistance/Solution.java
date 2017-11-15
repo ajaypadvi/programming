@@ -44,28 +44,39 @@ public class Solution {
             //calculate the hamming distance
             String first = findDigitsInBinary(pairs.get(i).get(0));
             String second = findDigitsInBinary(pairs.get(i).get(1));
-            sum += hammingDistance(first, second);
+            int distance = hammingDistance(first, second);
+            System.out.println("distance between " + first + " " + second + " :" + distance);
+            sum += distance;
         }
         return sum % 1000000007;
     }
 
     public static int hammingDistance(String first, String second) {
         int distance = 0;
-        int length = Math.max(first.length(), second.length());
-        for (int i = length - 1; i >= 0; i--) {
-            int firstDigit = 0;
-            try {
-                firstDigit = new Integer(first.charAt(i)).intValue();
-            } catch (RuntimeException ex) {
+        int zeroesToBePadded = 0;
+        if (first.length() > second.length()) {
+            zeroesToBePadded = first.length() - second.length();
+            StringBuilder builder = new StringBuilder();
+            for (int i = 0; i < zeroesToBePadded; i++) {
+                builder.append("0");
             }
-            int secondDigit = 0;
-            try {
-                secondDigit = new Integer(second.charAt(i)).intValue();
-            } catch (RuntimeException ex) {
+            builder.append(second);
+            second = builder.toString();
+        } else if (second.length() > first.length()) {
+            zeroesToBePadded = second.length() - first.length();
+            StringBuilder builder = new StringBuilder();
+            for (int i = 0; i < zeroesToBePadded; i++) {
+                builder.append("0");
             }
+            builder.append(first);
+            first = builder.toString();
+        }
 
-            if (firstDigit != secondDigit) {
-                distance++;
+        if (first.length() == second.length()) {
+            for (int i = 0; i < first.length(); i++) {
+                if (first.charAt(i) != second.charAt(i)) {
+                    distance++;
+                }
             }
         }
         return distance;

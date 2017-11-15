@@ -37,6 +37,13 @@ public class SolutionTest {
     @Test
     public void test3() {
         int distance = solution.hammingDistance(new ArrayList<>(Arrays.asList(96, 96, 7, 81, 2, 13)));
+        assertEquals(104, distance);
+    }
+
+    @Test
+    public void testHammingDistance() {
+        int distance = solution.hammingDistance("1010001", "111");
         assertEquals(4, distance);
     }
+
 }
