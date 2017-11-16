@@ -24,7 +24,6 @@ public class Solution {
             } else {
                 list.add(String.valueOf(i));
             }
-
         }
         return list;
     }
