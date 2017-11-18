@@ -1,4 +1,4 @@
-package interviewbit.level3.string.palindromestring;
+package interviewbit.level3.string.words.reverse;
 
 import org.junit.After;
 import org.junit.Before;
@@ -22,13 +22,7 @@ public class SolutionTest {
 
     @Test
     public void test1() {
-        int isPalindrome = solution.isPalindrome("A man, a plan, a canal: Panama");
-        assertEquals(1, isPalindrome);
-    }
-
-    @Test
-    public void test2() {
-        int isPalindrome = solution.isPalindrome("race a car");
-        assertEquals(0, isPalindrome);
+        String actual = solution.reverseWords("the sky is blue");
+        assertEquals("blue is sky the", actual);
     }
 }

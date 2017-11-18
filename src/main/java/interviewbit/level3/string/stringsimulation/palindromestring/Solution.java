@@ -1,4 +1,4 @@
-package interviewbit.level3.string.palindromestring;
+package interviewbit.level3.string.stringsimulation.palindromestring;
 
 /*
 Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.

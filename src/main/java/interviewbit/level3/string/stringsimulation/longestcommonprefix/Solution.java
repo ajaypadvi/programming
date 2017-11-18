@@ -1,4 +1,4 @@
-package interviewbit.level3.string.longestcommonprefix;
+package interviewbit.level3.string.stringsimulation.longestcommonprefix;
 
 import java.util.ArrayList;
 
