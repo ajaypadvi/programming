@@ -24,18 +24,11 @@ public class Solution {
         }
         a = a.trim();
         ArrayList<String> list = new ArrayList<>();
-        boolean foundSpace = false;
         int startIndex = 0, endIndex = 0;
         for (int i = 0; i < a.length(); i++) {
             if (Character.isLetter(a.charAt(i))) {
-                foundSpace = false;
                 endIndex++;
             } else {
-                if (foundSpace) {
-                    startIndex = i + 1;
-                    continue;
-                }
-                foundSpace = true;
                 list.add(a.substring(startIndex, endIndex));
                 startIndex = i + 1;
                 endIndex++;
