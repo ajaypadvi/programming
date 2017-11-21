@@ -20,7 +20,6 @@ the sequence is 11.
  */
 public class Solution {
     public String countAndSay(int a) {
-        StringBuilder sb = new StringBuilder();
         String result = "1";
         for (int i = 1; i < a; i++) {
             result = getCountAndSayRepresentation(result);
