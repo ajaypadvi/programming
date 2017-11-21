@@ -46,24 +46,30 @@ public class SolutionTest {
     @Test
     public void test5() {
         int result = solution.isNumber("2e10");
-        assertEquals(result, 1);
+        assertEquals(1, result);
     }
 
     @Test
     public void test6() {
         int result = solution.isNumber("0.1e10");
-        assertEquals(result, 1);
+        assertEquals(1, result);
     }
 
     @Test
     public void test7() {
         int result = solution.isNumber("-01.1e-10");
-        assertEquals(result, 1);
+        assertEquals(1, result);
     }
 
     @Test
     public void test8() {
         int result = solution.isNumber("2e10");
         assertEquals(result, 1);
+    }
+
+    @Test
+    public void test9() {
+        int result = solution.isNumber("+      ");
+        assertEquals(0, result);
     }
 }

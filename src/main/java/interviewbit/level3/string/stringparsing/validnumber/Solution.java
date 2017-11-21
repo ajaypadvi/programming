@@ -53,41 +53,61 @@ Yes for this problem
 public class Solution {
     public int isNumber(final String a) {
         int result = 0;
-        if (a == null || a.length() == 0) {
-            return result;
-        }
 
-        int index = 0, n = a.length();
-        //Ignore all white spaces from starting of the array
-        while (index < n && a.charAt(index) == ' ') {
-            index++;
-        }
+        String str = a.trim();
+        int index = 0, n = str.length();
+
+        if (n == 0)
+            return result;
 
         if (index < n) {
             //Now we have found the first element within string
-            char firstElement = a.charAt(index);
-            if (!Character.isDigit(firstElement) || firstElement != '.' || firstElement != '+' || firstElement != '-') {
+            char firstElement = str.charAt(index);
+            if ((firstElement == '.' || firstElement == '+' || firstElement == '-') && index + 1 < n) {
+                index++;
+            } else if (Character.isDigit(firstElement)) {
+                index++;
+            } else {
                 return result;
             }
         }
 
-        boolean decimalPointOccurred = false;
+        //boolean decimalPointOccurred = false;
         boolean exponentOccurred = false;
         while (index < n) {
-            char ch = a.charAt(index);
+            char ch = str.charAt(index);
             if (ch == '.') {
                 //We should not have decimal point after exponent is realized
                 if (exponentOccurred) {
                     break;
                 }
-                decimalPointOccurred = true;
+                //    decimalPointOccurred = true;
+                //if the valid decimal point is occurred then we should check for the next char to be a digit or if the decimal point is itself the last remaining character then break
+                if ((index + 1 < n && !Character.isDigit(str.charAt(index + 1))) || index + 1 == n) {
+                    break;
+                }
+                index++;
+                continue;
             } else if (ch == 'e') {
                 exponentOccurred = true;
+                //the next char of valid exponent should be either sign or digit
+                if (index + 1 < n && !Character.isDigit(str.charAt(index + 1)) && str.charAt(index + 1) != '+' && str.charAt(index + 1) != '-') {
+                    break;
+                } else if (a.charAt(index + 1) == '+' || str.charAt(index + 1) == '-') {
+                    index++;
+                }
+                index++;
+                continue;
             }
-
+            if (!Character.isDigit(ch)) {
+                break;
+            } else {
+                index++;
+            }
         }
-
-
+        if (index == str.length()) {
+            result = 1;
+        }
         return result;
     }
 }
