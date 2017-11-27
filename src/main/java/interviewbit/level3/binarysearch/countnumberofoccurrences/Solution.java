@@ -1,6 +1,5 @@
 package interviewbit.level3.binarysearch.countnumberofoccurrences;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /*
