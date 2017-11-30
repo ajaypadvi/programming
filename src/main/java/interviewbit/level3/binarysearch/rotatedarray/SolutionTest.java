@@ -28,4 +28,9 @@ public class SolutionTest {
         int result = solution.findNumberOfRotations(new ArrayList<Integer>(Arrays.asList(11, 12, 15, 18, 2, 5, 6, 8)));
         assertEquals(4, result);
     }
+
+    @Test
+    public void test2(){
+        solution.findNumberOfRotations(null);
+    }
 }

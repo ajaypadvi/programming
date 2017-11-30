@@ -15,9 +15,9 @@ public class Solution {
      */
     public int findNumberOfRotations(ArrayList<Integer> a) {
         int rotations = 0;
-        int n = a.size();
         if (a == null || a.size() == 1)
             return rotations;
+        int n = a.size();
         int low = 0, high = n - 1, mid;
         while (low <= high) {
             //Case 1 : If element at the low index is equals to element at the high index then array is already sorted and their are typically no rotations fpr the sub-array/array which is bound by low and high bounds
